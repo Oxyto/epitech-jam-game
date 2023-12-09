@@ -455,4 +455,5 @@ layer_0/tile_data = PackedInt32Array(3276804, 65536, 0, 3276805, 65536, 0, 32768
 scale = Vector2(0.111689, 0.0956977)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
 color = Color(0, 0, 0, 1)
