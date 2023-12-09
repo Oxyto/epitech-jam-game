@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuxmykdli51f"]
+
+[ext_resource type="Theme" uid="uid://cvdbgfrwqtyat" path="res://Themes/MenuTheme.tres" id="1_0r4lw"]
+[ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="1_s6nn8"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s6nn8")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 251.0
+grow_horizontal = 2
+theme = ExtResource("1_0r4lw")
+theme_override_font_sizes/font_size = 72
+text = "Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Layout" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = 21.0
+offset_right = 120.0
+offset_bottom = 145.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Play" type="Button" parent="Layout"]
+custom_minimum_size = Vector2(360, 80)
+layout_mode = 2
+theme = ExtResource("1_0r4lw")
+theme_override_font_sizes/font_size = 32
+text = "Play"
+
+[node name="Quit" type="Button" parent="Layout"]
+custom_minimum_size = Vector2(360, 80)
+layout_mode = 2
+theme = ExtResource("1_0r4lw")
+theme_override_font_sizes/font_size = 32
+text = "Quit"
+
+[connection signal="button_up" from="Layout/Play" to="." method="_on_play"]
+[connection signal="button_up" from="Layout/Play" to="." method="_on_play_pressed"]
+[connection signal="button_up" from="Layout/Quit" to="." method="_on_quit"]
+[connection signal="button_up" from="Layout/Quit" to="." method="_on_quit_pressed"]
