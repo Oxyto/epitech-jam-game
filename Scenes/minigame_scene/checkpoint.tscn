@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://tibo2h6jbcyw"]
+
+[ext_resource type="Texture2D" uid="uid://bcr7mjh53aw2u" path="res://Sprites/Checkpoint.png" id="1_m65fk"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vjy4s"]
+radius = 6.0
+height = 48.0
+
+[node name="CharacterBody2D2" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_m65fk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-8, 10)
+shape = SubResource("CapsuleShape2D_vjy4s")
