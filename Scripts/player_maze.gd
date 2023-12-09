@@ -10,7 +10,9 @@ func _physics_process(delta):
 	
 	currentIntensity -= decreaseRate * delta
 	currentIntensity = max(0, currentIntensity)
-
+	$PointLight2D.texture_scale = currentIntensity
+	if (currentIntensity == 0):
+		currentIntensity = 5
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
