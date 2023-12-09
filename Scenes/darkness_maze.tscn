@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://b6pk5v225o0cq"]
+[gd_scene load_steps=5 format=3 uid="uid://cva30o72pj13x"]
 
-[ext_resource type="PackedScene" uid="uid://lkeau2avfn" path="res://Scenes/player_maze.tscn" id="2_erbkm"]
+[ext_resource type="PackedScene" uid="uid://d36tb41w84t5q" path="res://Scenes/player_maze.tscn" id="2_erbkm"]
 [ext_resource type="Texture2D" uid="uid://be0nkd8m88xax" path="res://Textures/Background/Terrain (16x16).png" id="4_o4hg3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wx2p3"]

@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
+const SPEED = 150.0
 var startingIntensity = 5.0
 var currentIntensity = startingIntensity
 var decreaseRate = 0.1

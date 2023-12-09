@@ -30,6 +30,6 @@ func _physics_process(delta):
 	if direction:
 		velocity.x = direction * SPEED
 	else:
-		velocity.x = move_toward(velocity.x, 0, 12 )
+		velocity.x = move_toward(velocity.x, 0, 30)
 
 	move_and_slide()
