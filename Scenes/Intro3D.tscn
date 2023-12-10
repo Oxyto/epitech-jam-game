@@ -482,7 +482,7 @@ text = "(press Space or Enter to continue)"
 [node name="Camera" type="Camera3D" parent="."]
 transform = Transform3D(-4.35081e-08, -0.218348, 0.975871, 4.21081e-09, 0.975871, 0.218348, -1, 1.36091e-08, -4.15389e-08, 0, 2.49653, 0)
 current = true
-fov = 50.0
+fov = 40.0
 
 [node name="ArcadeMesh" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.121756, 0, 0, 0, 0.121756, 0, 0, 0, 0.121756, -3.91823, 1.16937, 0.101237)
@@ -510,3 +510,4 @@ autoplay = true
 
 [node name="IntroTextSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_ht2xi")
+volume_db = -12.0

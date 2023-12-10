@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://cuxmykdli51f"]
+[gd_scene load_steps=6 format=3 uid="uid://cuxmykdli51f"]
 
 [ext_resource type="Theme" uid="uid://cvdbgfrwqtyat" path="res://Themes/MenuTheme.tres" id="1_0r4lw"]
 [ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="1_s6nn8"]
+[ext_resource type="Texture2D" uid="uid://h4c1tf1u2kg" path="res://Textures/Background/ArcadeBackground.jpg" id="3_48l8t"]
 [ext_resource type="AudioStream" uid="uid://ce8glaba6co3c" path="res://Audio/ButtonHover.ogg" id="3_i4rqg"]
+[ext_resource type="AudioStream" uid="uid://broh76e4qj8xn" path="res://Audio/Noise.wav" id="4_vmovw"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -20,8 +22,8 @@ anchor_right = 1.0
 offset_bottom = 251.0
 grow_horizontal = 2
 theme = ExtResource("1_0r4lw")
-theme_override_font_sizes/font_size = 72
-text = "Game"
+theme_override_font_sizes/font_size = 64
+text = "I Want To Play A Game"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -32,12 +34,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -120.0
-offset_top = 21.0
-offset_right = 120.0
-offset_bottom = 145.0
+offset_left = -180.0
+offset_top = -16.0
+offset_right = 180.0
+offset_bottom = 176.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/separation = 32
 alignment = 1
 
 [node name="Play" type="Button" parent="Layout"]
@@ -54,14 +57,29 @@ theme = ExtResource("1_0r4lw")
 theme_override_font_sizes/font_size = 32
 text = "Quit"
 
+[node name="Background" type="TextureRect" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_48l8t")
+expand_mode = 1
+
 [node name="Buttons" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_i4rqg")
-volume_db = -12.0
+volume_db = -18.0
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_vmovw")
+volume_db = -24.0
+autoplay = true
 
-[connection signal="button_up" from="Layout/Play" to="." method="_on_play_pressed"]
 [connection signal="button_up" from="Layout/Play" to="." method="_on_play"]
+[connection signal="button_up" from="Layout/Play" to="." method="_on_play_pressed"]
 [connection signal="mouse_entered" from="Layout/Play" to="." method="_on_button_mouse_entered"]
 [connection signal="button_up" from="Layout/Quit" to="." method="_on_quit"]
 [connection signal="button_up" from="Layout/Quit" to="." method="_on_quit_pressed"]
