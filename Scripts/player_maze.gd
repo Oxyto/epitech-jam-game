@@ -4,7 +4,7 @@ extends CharacterBody2D
 const SPEED = 150.0
 var startingIntensity = 10.0
 var currentIntensity = startingIntensity
-var decreaseRate = 0.1
+var decreaseRate = 0.2
 @onready var sprite_2d = $spritePlayer
 	
 func _ready():
@@ -15,7 +15,13 @@ func _physics_process(delta):
 	currentIntensity = max(0, currentIntensity)
 	$PointLight2D.texture_scale = currentIntensity
 	if (currentIntensity == 0):
-		currentIntensity = 10
+		if get_tree().change_scene_to_file("res://MainMenu.tscn") != OK:
+			print("Error: Unavalable scene!")
+			
+	if (Input.is_action_pressed("reload")):
+		if get_tree().change_scene_to_file("res://Scenes/darkness_maze.tscn") != OK:
+			print("Error: Unavalable scene!")
+			Global.player_initial_map_position = Vector2(46,419)
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.

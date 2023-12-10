@@ -27,7 +27,7 @@ metadata/_edit_group_ = true
 shape = SubResource("RectangleShape2D_8qbdi")
 
 [node name="portalSprite" type="AnimatedSprite2D" parent="."]
-rotation = 16.9248
+rotation = 30.5787
 scale = Vector2(0.04, 0.04)
 sprite_frames = SubResource("SpriteFrames_xq7qk")
 frame_progress = 0.834163

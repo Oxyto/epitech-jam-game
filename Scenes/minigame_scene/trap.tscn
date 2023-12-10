@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://ch7lbte471q7m"]
+[gd_scene load_steps=8 format=3 uid="uid://dm6rv54aq3pfb"]
 
 [ext_resource type="Texture2D" uid="uid://ceu5py7va0yo7" path="res://Textures/Background/Green.png" id="1_hktbp"]
 [ext_resource type="Texture2D" uid="uid://be0nkd8m88xax" path="res://Textures/Background/Terrain (16x16).png" id="2_q870h"]
 [ext_resource type="PackedScene" uid="uid://b5y18w14mqsm5" path="res://Scenes/minigame_scene/player_mj1.tscn" id="3_8gfft"]
 [ext_resource type="AudioStream" uid="uid://dirj8phhhgwbd" path="res://Audio/trap_forever.mp3" id="4_i61ip"]
+[ext_resource type="PackedScene" uid="uid://50j6njvlfnr5" path="res://Scenes/portal.tscn" id="5_g8jha"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1sbh8"]
 texture = ExtResource("2_q870h")
@@ -543,7 +544,14 @@ layer_0/tile_data = PackedInt32Array(-65509, 983040, 4, 27, 983040, 5, 65563, 98
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_8gfft")]
 position = Vector2(0, 14)
+collision_layer = 259
+collision_mask = 259
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_i61ip")
 autoplay = true
+
+[node name="portal" parent="." instance=ExtResource("5_g8jha")]
+position = Vector2(1208, 272)
+scale = Vector2(6.40211, 6.16957)
+__scene_file = "res://Scenes/minigame_scene/trap.tscn"
