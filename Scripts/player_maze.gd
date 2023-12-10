@@ -2,17 +2,17 @@ extends CharacterBody2D
 
 
 const SPEED = 150.0
-var startingIntensity = 5.0
+var startingIntensity = 10.0
 var currentIntensity = startingIntensity
 var decreaseRate = 0.1
+@onready var sprite_2d = $spritePlayer
 
 func _physics_process(delta):
-	
 	currentIntensity -= decreaseRate * delta
 	currentIntensity = max(0, currentIntensity)
 	$PointLight2D.texture_scale = currentIntensity
 	if (currentIntensity == 0):
-		currentIntensity = 5
+		currentIntensity = 10
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -26,5 +26,14 @@ func _physics_process(delta):
 		velocity.y = directiony * SPEED
 	else:
 		velocity.y = move_toward(velocity.x, 0, SPEED)
+		
+	if (velocity.x > 0):
+		sprite_2d.animation = "avancer"
+	elif (velocity.x < 0):
+		sprite_2d.animation = "reculer"
+	elif (velocity.y > 0):
+		sprite_2d.animation = "descendre"
+	elif (velocity.y < 0):
+		sprite_2d.animation = "monter"
 
 	move_and_slide()
