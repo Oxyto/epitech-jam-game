@@ -10,7 +10,7 @@ Ke 0.800000 0.800000 0.800000
 Ni 1.000000
 d 1.000000
 illum 3
-map_Kd D:\Imagery\WIPs\AsterFire Title screen.png
+map_Kd C:\Users\Louis De Macedo\Desktop\Epitech Jam - Game\Textures\Arcade\AsterFire Title screen.png
 
 newmtl BlueButton
 Ns 92.156863
@@ -41,7 +41,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 0.528148
 illum 2
-map_Kd ArcadeDoors.png
+map_Kd C:\Users\Louis De Macedo\Desktop\Epitech Jam - Game\Textures\Arcade\ArcadeDoors.png
 
 newmtl CoinSlots
 Ns 749.019608
@@ -52,7 +52,7 @@ Ke 1.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd ArcadeCoinSlots.png
+map_Kd C:\Users\Louis De Macedo\Desktop\Epitech Jam - Game\Textures\Arcade\ArcadeCoinSlots.png
 
 newmtl Front
 Ns 92.156863
@@ -63,7 +63,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd AsterFireFrontArt.png
+map_Kd C:\Users\Louis De Macedo\Desktop\Epitech Jam - Game\Textures\Arcade\AsterFireFrontArt.png
 
 newmtl KeyHole
 Ns 749.019608
@@ -114,7 +114,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd AsterFireSideArt.png
+map_Kd C:\Users\Louis De Macedo\Desktop\Epitech Jam - Game\Textures\Arcade\AsterFireSideArt.png
 
 newmtl TrackBall
 Ns 92.156863
@@ -135,7 +135,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd Mesh.png
+map_Kd C:\Users\Louis De Macedo\Desktop\Epitech Jam - Game\Textures\Arcade\Mesh.png
 
 newmtl YellowButton
 Ns 92.156863
