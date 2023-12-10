@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=7 format=3 uid="uid://cvdbgfrwqtyat"]
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://cvdbgfrwqtyat"]
 
 [ext_resource type="FontFile" uid="uid://saled7id18te" path="res://Fonts/Monocraft-no-ligatures.ttf" id="1_k15rf"]
 
@@ -14,30 +14,13 @@ content_margin_top = 3.0
 content_margin_right = 3.0
 content_margin_bottom = 3.0
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3lfsr"]
-content_margin_left = 3.0
-content_margin_top = 3.0
-content_margin_right = 3.0
-content_margin_bottom = 3.0
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ltosl"]
-content_margin_left = 3.0
-content_margin_top = 3.0
-content_margin_right = 3.0
-content_margin_bottom = 3.0
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gid1d"]
-content_margin_left = 3.0
-content_margin_top = 3.0
-content_margin_right = 3.0
-content_margin_bottom = 3.0
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6do3j"]
 
 [resource]
+Button/colors/font_color = Color(1, 1, 1, 1)
 Button/fonts/font = ExtResource("1_k15rf")
 Button/styles/disabled = SubResource("StyleBoxEmpty_m412f")
 Button/styles/focus = SubResource("StyleBoxEmpty_jetfd")
-Button/styles/hover = SubResource("StyleBoxEmpty_3lfsr")
-Button/styles/normal = SubResource("StyleBoxEmpty_ltosl")
-Button/styles/pressed = SubResource("StyleBoxEmpty_gid1d")
+Button/styles/pressed = SubResource("StyleBoxEmpty_6do3j")
 Label/font_sizes/font_size = 16
 Label/fonts/font = ExtResource("1_k15rf")
