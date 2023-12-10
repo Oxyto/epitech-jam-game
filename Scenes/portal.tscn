@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://50j6njvlfnr5"]
+
+[ext_resource type="Script" path="res://Scripts/portal_maze.gd" id="1_seeen"]
+[ext_resource type="Texture2D" uid="uid://td1b4tfdu0wo" path="res://Sprites/portal.png" id="2_ba45d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8qbdi"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xq7qk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ba45d")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="portal" type="Area2D"]
+position = Vector2(48, 450)
+collision_layer = 258
+collision_mask = 258
+script = ExtResource("1_seeen")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_8qbdi")
+
+[node name="portalSprite" type="AnimatedSprite2D" parent="."]
+rotation = 16.9248
+scale = Vector2(0.04, 0.04)
+sprite_frames = SubResource("SpriteFrames_xq7qk")
+frame_progress = 0.834163
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

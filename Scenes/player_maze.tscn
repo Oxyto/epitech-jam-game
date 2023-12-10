@@ -228,6 +228,8 @@ animations = [{
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(46, 419)
 scale = Vector2(0.198675, 0.176839)
+collision_layer = 256
+collision_mask = 257
 script = ExtResource("1_sgwak")
 
 [node name="spritePlayer" type="AnimatedSprite2D" parent="."]
@@ -237,8 +239,7 @@ scale = Vector2(1.20607, 1.45738)
 sprite_frames = SubResource("SpriteFrames_mppgn")
 animation = &"avancer"
 autoplay = "avancer"
-frame = 3
-frame_progress = 0.166298
+frame_progress = 0.268705
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1.31203e-06, 0)

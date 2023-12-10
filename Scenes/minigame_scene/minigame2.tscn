@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://dtqqg5okpsmre"]
+[gd_scene load_steps=9 format=3 uid="uid://dtqqg5okpsmre"]
 
 [ext_resource type="Texture2D" uid="uid://cxfvo4jsv20ej" path="res://Textures/Background/Blue.png" id="1_id627"]
 [ext_resource type="Texture2D" uid="uid://be0nkd8m88xax" path="res://Textures/Background/Terrain (16x16).png" id="2_hhrha"]
 [ext_resource type="PackedScene" uid="uid://pw5vvo4bj77i" path="res://Scenes/minigame_scene/player_mj2.tscn" id="3_y5rjn"]
-[ext_resource type="PackedScene" uid="uid://tibo2h6jbcyw" path="res://Scenes/minigame_scene/checkpoint.tscn" id="4_6hc41"]
 [ext_resource type="Texture2D" uid="uid://b3vv36m5rq7dc" path="res://eude.png" id="5_lyodk"]
+[ext_resource type="PackedScene" uid="uid://50j6njvlfnr5" path="res://Scenes/portal.tscn" id="5_uxjbq"]
+[ext_resource type="Script" path="res://Scripts/portal_minigame.gd" id="6_kpqlg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1sbh8"]
 texture = ExtResource("2_hhrha")
@@ -565,12 +566,17 @@ layer_0/tile_data = PackedInt32Array(-65509, 983040, 4, 27, 983040, 5, 65563, 98
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_y5rjn")]
 position = Vector2(61, 288)
 scale = Vector2(1, 1)
-
-[node name="CharacterBody2D2" parent="." instance=ExtResource("4_6hc41")]
-position = Vector2(178, 464)
-scale = Vector2(2, 2)
+collision_layer = 259
+collision_mask = 259
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(192, 836)
 scale = Vector2(0.253436, 0.190698)
 texture = ExtResource("5_lyodk")
+
+[node name="portal" parent="." instance=ExtResource("5_uxjbq")]
+position = Vector2(199, 474)
+scale = Vector2(5.82007, 5.60492)
+script = ExtResource("6_kpqlg")
+__scene_file = "res://Scenes/darkness_maze.tscn"
+player_Spawn_location = Vector2(0, -20)

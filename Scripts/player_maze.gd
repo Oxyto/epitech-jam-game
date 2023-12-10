@@ -6,6 +6,9 @@ var startingIntensity = 10.0
 var currentIntensity = startingIntensity
 var decreaseRate = 0.1
 @onready var sprite_2d = $spritePlayer
+	
+func _ready():
+	global_position = Global.player_initial_map_position
 
 func _physics_process(delta):
 	currentIntensity -= decreaseRate * delta
