@@ -584,7 +584,7 @@ position = Vector2(634, 434)
 scale = Vector2(1.2, 1.2)
 
 [node name="portal" parent="." instance=ExtResource("5_oixgq")]
-position = Vector2(3994, -978)
+position = Vector2(1223, 292)
 scale = Vector2(4.53838, 4.91935)
 script = ExtResource("6_ory47")
 __scene_file = "res://Scenes/darkness_maze.tscn"
