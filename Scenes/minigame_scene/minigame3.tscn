@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cxfvo4jsv20ej" path="res://Textures/Background/Blue.png" id="1_ci541"]
 [ext_resource type="Texture2D" uid="uid://be0nkd8m88xax" path="res://Textures/Background/Terrain (16x16).png" id="2_aeywm"]
-[ext_resource type="PackedScene" path="res://Scenes/minigame_scene/player_mj3.tscn" id="4_g3ppe"]
+[ext_resource type="PackedScene" uid="uid://cudksu3e16w28" path="res://Scenes/minigame_scene/player_mj3.tscn" id="4_g3ppe"]
 [ext_resource type="PackedScene" uid="uid://50j6njvlfnr5" path="res://Scenes/portal.tscn" id="5_0ntwh"]
 [ext_resource type="Texture2D" uid="uid://b3vv36m5rq7dc" path="res://eude.png" id="5_tlgqo"]
 [ext_resource type="Script" path="res://Scripts/portal_minigame.gd" id="6_gwxmo"]

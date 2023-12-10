@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b35p1qy8qelle"
+path="res://.godot/imported/Wrong Doors.mp3-eaa70ed6ca00ae5a82e0cfeb435a8bc6.mp3str"
+
+[deps]
+
+source_file="res://Audio/Wrong Doors.mp3"
+dest_files=["res://.godot/imported/Wrong Doors.mp3-eaa70ed6ca00ae5a82e0cfeb435a8bc6.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

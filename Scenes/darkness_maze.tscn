@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://cva30o72pj13x"]
+[gd_scene load_steps=10 format=3 uid="uid://cva30o72pj13x"]
 
 [ext_resource type="PackedScene" uid="uid://d36tb41w84t5q" path="res://Scenes/player_maze.tscn" id="2_erbkm"]
-[ext_resource type="PackedScene" uid="uid://cqb27po415ogr" path="res://Scenes/portal.tscn" id="3_4uq3f"]
+[ext_resource type="PackedScene" uid="uid://50j6njvlfnr5" path="res://Scenes/portal.tscn" id="3_4uq3f"]
 [ext_resource type="Texture2D" uid="uid://be0nkd8m88xax" path="res://Textures/Background/Terrain (16x16).png" id="4_o4hg3"]
 [ext_resource type="Script" path="res://Scripts/endGame.gd" id="4_txvht"]
+[ext_resource type="AudioStream" uid="uid://b35p1qy8qelle" path="res://Audio/Wrong Doors.mp3" id="5_1xhwf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wx2p3"]
 texture = ExtResource("4_o4hg3")
@@ -467,6 +468,10 @@ collision_mask = 259
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0, 0, 0, 1)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_1xhwf")
+autoplay = true
 
 [node name="portal" parent="." instance=ExtResource("3_4uq3f")]
 scale = Vector2(0.996674, 1.02035)

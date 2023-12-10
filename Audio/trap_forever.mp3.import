@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/trap_forever.mp3-d6a939d3f0693ab5cd069766d4fb
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0
