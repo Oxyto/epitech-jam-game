@@ -12,6 +12,10 @@ var isLeft = velocity.x < 0
 
 func _physics_process(delta):
 	if (velocity.x < -1 || velocity.x > 1):
+		if (velocity.x < 0):
+			animated_sprite_2d.set_flip_h(true)
+		else:
+			animated_sprite_2d.set_flip_h(false)
 		animated_sprite_2d.animation = "running"
 	else:
 		animated_sprite_2d.animation = "default"
