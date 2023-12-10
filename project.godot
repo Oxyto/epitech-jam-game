@@ -22,6 +22,10 @@ window/size/viewport_height=900
 window/stretch/mode="viewport"
 window/stretch/aspect="ignore"
 
+[filesystem]
+
+import/fbx/enabled=false
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

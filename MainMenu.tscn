@@ -60,9 +60,9 @@ volume_db = -12.0
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 
-[connection signal="button_up" from="Layout/Play" to="." method="_on_play"]
 [connection signal="button_up" from="Layout/Play" to="." method="_on_play_pressed"]
+[connection signal="button_up" from="Layout/Play" to="." method="_on_play"]
 [connection signal="mouse_entered" from="Layout/Play" to="." method="_on_button_mouse_entered"]
-[connection signal="button_up" from="Layout/Quit" to="." method="_on_quit"]
 [connection signal="button_up" from="Layout/Quit" to="." method="_on_quit_pressed"]
+[connection signal="button_up" from="Layout/Quit" to="." method="_on_quit"]
 [connection signal="mouse_entered" from="Layout/Quit" to="." method="_on_button_mouse_entered"]
