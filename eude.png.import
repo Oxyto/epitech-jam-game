@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dewhfw7jajxoi"
-path="res://.godot/imported/Idle (32x32).png-f64179080e1db9c31145892eedf1b028.ctex"
+uid="uid://b3vv36m5rq7dc"
+path="res://.godot/imported/eude.png-c53eba8305f969df4b8095554d02db0c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Ninja Frog/Idle (32x32).png"
-dest_files=["res://.godot/imported/Idle (32x32).png-f64179080e1db9c31145892eedf1b028.ctex"]
+source_file="res://eude.png"
+dest_files=["res://.godot/imported/eude.png-c53eba8305f969df4b8095554d02db0c.ctex"]
 
 [params]
 

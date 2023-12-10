@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dewhfw7jajxoi"
-path="res://.godot/imported/Idle (32x32).png-f64179080e1db9c31145892eedf1b028.ctex"
+uid="uid://djksk0gu7hc6v"
+path="res://.godot/imported/Pineapple.png-27355d900f6a22a662919f906dd2259a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Ninja Frog/Idle (32x32).png"
-dest_files=["res://.godot/imported/Idle (32x32).png-f64179080e1db9c31145892eedf1b028.ctex"]
+source_file="res://Sprites/Fruits/Pineapple.png"
+dest_files=["res://.godot/imported/Pineapple.png-27355d900f6a22a662919f906dd2259a.ctex"]
 
 [params]
 
